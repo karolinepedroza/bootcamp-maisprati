@@ -1,0 +1,73 @@
+/* Estilização básica */
+header, main, footer {
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid #ccc;
+}
+
+/* Estilo para h2 */
+h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+/* Classe destaque */
+.destaque {
+  font-style: italic;
+  background-color: #e0e0e0;
+}
+
+/* ID importante */
+#importante {
+  border-top: 5px solid #333;
+}
+
+/* Galeria com Grid e Flexbox */
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 1000px;
+}
+
+.galeria div {
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 601px) {
+  .hamburger {
+    display: none;
+  }
+}

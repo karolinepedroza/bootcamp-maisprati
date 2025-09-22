@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Feedback</title>
+</head>
+<body>
+
+  <header>
+    <h1>Feedback DevOps</h1>
+    <nav>
+      <a href="index.html">Início</a> |
+      <a href="listas.html">Listas</a> |
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Formulário de Feedback</h2>
+    <form>
+      <label>Nome:</label><br>
+      <input type="text" name="nome"><br><br>
+
+      <label>E-mail:</label><br>
+      <input type="email" name="email"><br><br>
+
+      <label>Endereço Completo:</label><br>
+      <input type="text" name="endereco"><br><br>
+
+      <label>Tipo de Feedback:</label><br>
+      <select name="tipo">
+        <option>Docker</option>
+        <option>Terraform</option>
+        <option>Kubernetes</option>
+      </select><br><br>
+
+      <label>Feedback:</label><br>
+      <textarea name="mensagem" rows="4" cols="50"></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+</body>
+</html>
